@@ -1,4 +1,4 @@
-
+import isValidEmail from './utils/validations.js'
 export const handleSubmit = (event) => {
     event.preventDefault();
   
@@ -27,7 +27,7 @@ export const handleSubmit = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-        //.then(() => navigate("/thank-you/")) // custom page insted of console.log
-        .then(() => console.log("Form successfully submitted"))
+        .then(() => navigate("/success.html")) // custom page insted of console.log
+        //.then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
   };
