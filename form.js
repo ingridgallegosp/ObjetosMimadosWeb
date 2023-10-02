@@ -1,11 +1,11 @@
-import isValidEmail from './utils/validations.js'
-export const handleSubmit = (event) => {
+/* import isValidEmail from './utils/validations.js'
+ */export const handleSubmit = (event) => {
     event.preventDefault();
   
     const myForm = event.target;
     const formData = new FormData(myForm);
 
-//---
+/* //---
     const name = formData.get("name");
     const email = formData.get("email");
   
@@ -17,7 +17,7 @@ export const handleSubmit = (event) => {
     if (!isValidEmail(email)) {
       alert("Por favor, ingresa un email válido.");
       return;
-    }
+    } */
     
     myForm.reset();
 //---
