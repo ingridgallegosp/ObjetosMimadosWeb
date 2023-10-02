@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+
+:root{
+    --card-background: #f3f2f2;
+    --gray:#A1A1A1;
+    --gray-light: #f9f9f9;
+    --gray-dark:#686868;
+    --white:#ffffff;
+    --blue: #A3AEC2;
+    --black: rgb(58, 58, 58);
+    --taupe: #4A4238;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder{
+    color: var(--gray);
+}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--gray); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gray-dark); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-dark); 
+}
+
+
+
+
+body header{
+    width: 100%;
+    
+} 
+
+body header .notifications{
+    background-color: var(--blue);
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body header .notifications p{
+    color: var(--white);
+    padding: 2%;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+body header .notifications  a{
+    width: 12%;
+    display: flex;
+}
+
+body header .notifications  a img{
+    width: 90%;
+    padding: 5%;
+}
+
+body header .page-name{
+    padding: 5%;
+    text-align: center;
+}
+
+body header .page-name p{
+    font-size: 1.2rem;
+}
+
+body .content{
+    width: 100%;
+    background-color: var(--gray-light);
+}
+
+body .content figure{
+    width: 0%;
+}
+
+body .content figure img{
+    width: 0%;   
+}
+
+body .content section {
+    width: 100%;
+   
+}
+
+body .content section .title{
+    padding: 0 0 3% 0;
+    text-align: center;
+}
+
+body .content section .title h1{
+    font-size: 1.8rem;
+}
+
+body .content section .title h2{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+body .content section .img-smallview {
+    width: 100%;
+}
+
+body .content section .img-smallview img{
+    width: 100%;
+}
+
+body .content section .text{
+    text-align: center;
+    padding: 5%;
+}
+
+body .content section .text p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+body .content section form{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 4px var(--gray);
+}
+
+body .content section form label{
+    padding: 1% 0;
+    color: var(--blue);
+}
+
+body .content section form input{
+    margin: 1% 0 3% 0;
+    background: transparent;
+    padding: 2%;
+    border: none;
+    border-bottom: solid var(--taupe) 1px;
+    outline: none;
+    color: var(--taupe);
+}
+
+body .content section form button{
+    font-size: 1rem;
+    margin: 5% 0;
+    padding: 3%;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 4px var(--gray);
+    font-weight: 500;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+body .content section form button:hover {
+    animation: shaking 0.4s infinite;}
+@keyframes shaking {
+   0% {transform: translateX(0) rotate(0deg);}
+   25% {transform: translateX(15px) rotate(3deg);}
+   50% {transform: translateX(0px) rotate(0deg);}
+   75% {transform: translateX(-15px) rotate(-3deg);}
+   100% {transform: translateX(0px) rotate(0deg);}
+}
+
+body footer{
+    background-color: var(--taupe);
+    padding: 2%;
+}
+
+body footer p{
+    font-size: 0.8rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) {
+
+    body header .notifications{
+        height: 6vh;
+        padding: 0;
+        justify-content: flex-end;
+    }
+    body header .notifications p{
+        padding: 1%;
+    }
+    body header .notifications a{
+        width: 6%;
+    }
+    body header .page-name{
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    body .content section form label{
+        font-size: 1rem;
+    }
+    body .content section form button{
+        font-size: 1.2rem;
+    }
+    body footer{
+        height: 9vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+    /* Media query for larger screens (monitors) */
+@media screen and (min-width: 1024px) {
+    
+    body{
+        max-width: 1366px;
+        margin: auto;
+    }
+
+    body header .notifications a{
+        width: 4%;
+    }
+    
+    body .content{
+        display: flex;
+        flex-direction: row;
+    }
+    body .content section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body .content section .title div{
+        display: flex;
+    }
+    body .content section .title div h2{
+        font-weight: 300;
+        font-size: .6rem;
+        padding: 0 1%;
+    }
+    body .content section text p{
+        padding: 0 0 2% 0;
+    }
+    body .content figure{
+        width: 40%;
+        background-image: url(/assets/Christmas\ Decor.jpg);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    body .content figure::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(254, 254, 254, 0.71) ;
+    }
+
+    body .content figure img{
+        width: 85%;   
+        position: absolute;
+        right: -4em;
+    }
+    body .content section{
+        width: 60%;
+        margin: 3% 5% 3% 7% ;
+    }
+    body .content section .img-smallview img{
+        width: 0;
+        height: 0;
+    }
+    body .content section .text{
+        padding:  5%;
+    }
+    body .content section .text p{
+        padding: 2% 0;
+    }
+    body .content section form{
+        padding: 2% 10%;
+        width: 70%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    body .content section form label{
+        padding: 3% 0 ;
+    }
+    body .content section form input{
+        font-size: 1rem;
+        padding: 3%;
+        border-radius: 0.8rem;
+        box-shadow: 0 2px 4px var(--gray);
+        font-weight: 500;
+        background: var(--white);
+        border: none;        
+    }
+    body .content section form button{
+        padding: 2%;
+        margin: 8% 0 5%;
+    }
+    
+}
