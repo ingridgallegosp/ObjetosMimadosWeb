@@ -155,7 +155,7 @@ body .content section form input{
     border: none;
     border-bottom: solid var(--taupe) 1px;
     outline: none;
-    
+    color: var(--taupe);
 }
 
 body .content section form button{
@@ -309,18 +309,13 @@ body footer p{
         padding: 3% 0 ;
     }
     body .content section form input{
-        /* margin: 2%; */
         font-size: 1rem;
-    /* margin: 5% 0; */
-    padding: 3%;
-    border-radius: 0.8rem;
-    box-shadow: 0 2px 4px var(--gray);
-    font-weight: 500;
-    background: var(--white);
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-        
+        padding: 3%;
+        border-radius: 0.8rem;
+        box-shadow: 0 2px 4px var(--gray);
+        font-weight: 500;
+        background: var(--white);
+        border: none;        
     }
     body .content section form button{
         padding: 2%;
