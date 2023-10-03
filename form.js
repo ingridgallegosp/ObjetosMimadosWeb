@@ -1,4 +1,4 @@
-import { isValidEmail } from "./utils/validations";
+/* import { isValidEmail } from "./utils/validations";
 
 export const handleSubmit = (event) => {
     event.preventDefault();
@@ -31,4 +31,4 @@ export const handleSubmit = (event) => {
         .then(() => window.location.href = "/success.html")
         //.then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
-  };
+  }; */
