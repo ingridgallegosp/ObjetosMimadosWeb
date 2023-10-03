@@ -28,7 +28,7 @@ export const handleSubmit = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-        .then(() => window.location.href = "/success.html") // custom page insted of console.log
+        .then(() => window.location.href = "/success.html")
         //.then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
   };
