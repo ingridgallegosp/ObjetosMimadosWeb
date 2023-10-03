@@ -7,7 +7,7 @@ export const handleSubmit = (event) => {
     const formData = new FormData(myForm);
 
 //---
-    const name = formData.get("name");
+    const name = formData.get("user");
     const email = formData.get("email");
   
     if (!name) {
@@ -18,7 +18,7 @@ export const handleSubmit = (event) => {
     if (!isValidEmail(email)) {
       alert("Por favor, ingresa un email válido.");
       return;
-    }
+    } 
     
     myForm.reset();
 //---
@@ -28,7 +28,7 @@ export const handleSubmit = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-        //.then(() => navigate("/success.html")) // custom page insted of console.log
-        .then(() => console.log("Form successfully submitted"))
+        .then(() => window.location.href = "/success.html") // custom page insted of console.log
+        //.then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
   };
