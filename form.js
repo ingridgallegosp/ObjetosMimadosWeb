@@ -1,4 +1,4 @@
-/* import { isValidEmail } from "./utils/validations";
+import { isValidEmail } from "./utils/validations";
 
 export const handleSubmit = (event) => {
     event.preventDefault();
@@ -28,7 +28,7 @@ export const handleSubmit = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-        .then(() => window.location.href = "/success.html")
-        //.then(() => console.log("Form successfully submitted"))
+        //.then(() => window.location.href = "/success.html")
+        .then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
-  }; */
+  }; 
