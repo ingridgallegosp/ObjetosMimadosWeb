@@ -1,4 +1,4 @@
-import { handleSubmit } from './form';
+/* import { handleSubmit } from './form';
 import '/style.css'
 
 document
@@ -6,3 +6,4 @@ document
     .addEventListener("submit", handleSubmit);
 
 
+ */
