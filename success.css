@@ -99,6 +99,9 @@ body .content figure img{
 
 body .content section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
 }
 
@@ -136,31 +139,7 @@ body .content section .text p{
     padding: 2%;
 }
 
-body .content section form{
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    border-radius: 0.8rem;
-    box-shadow: 0 2px 4px var(--gray);
-}
-
-body .content section form label{
-    padding: 1% 0;
-    color: var(--blue);
-}
-
-body .content section form input{
-    margin: 1% 0 3% 0;
-    background: transparent;
-    padding: 2%;
-    border: none;
-    border-bottom: solid var(--taupe) 1px;
-    outline: none;
-    color: var(--taupe);
-}
-
-body .content section form button{
+body .content section button{
     font-size: 1rem;
     margin: 5% 0;
     padding: 3%;
@@ -168,12 +147,11 @@ body .content section form button{
     box-shadow: 0 2px 4px var(--gray);
     font-weight: 500;
     background: var(--blue2);
-    color: var(--white);
     border: none;
     cursor: pointer;
 }
 
-body .content section form button:hover {
+body .content section button:hover {
     animation: shaking 0.4s infinite;}
 @keyframes shaking {
    0% {transform: translateX(0) rotate(0deg);}
@@ -182,6 +160,24 @@ body .content section form button:hover {
    75% {transform: translateX(-15px) rotate(-3deg);}
    100% {transform: translateX(0px) rotate(0deg);}
 }
+
+body .content section button a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+body .content section .final{
+    
+
+}
+
+body .content section .final p{
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 2%;
+    text-align: center;
+}
+
 
 body footer{
     background-color: var(--blue);
