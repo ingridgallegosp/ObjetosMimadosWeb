@@ -241,6 +241,10 @@ body footer p{
         flex-direction: column;
         align-items: center;
     }
+    body header .notifications a img{
+        width: 80%;
+        padding: 5%;
+    }
 
     body .content-success{
         width: 60%;
