@@ -84,20 +84,20 @@ body header .page-name p{
     font-size: 1.2rem;
 }
 
-body .content{
+body .content-success{
     width: 100%;
     background-color: var(--gray-light);
 }
 
-body .content figure{
+body .content-success figure{
     width: 0%;
 }
 
-body .content figure img{
+body .content-success figure img{
     width: 0%;   
 }
 
-body .content section {
+body .content-success section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -105,41 +105,46 @@ body .content section {
    
 }
 
-body .content section .title{
+body .content-success section .title{
     padding: 0 0 3% 0;
     text-align: center;
 }
 
-body .content section .title h1{
-    font-size: 1.8rem;
+body .content-success section .title .successh2{
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-body .content section .title h2{
-    font-weight: 300;
+body .content-success section .title p{
     font-size: 1rem;
+    font-weight: 300;
+    padding: 2% 0;
 }
 
+body .content-success section .title iframe{
+    padding: 2% 0;
+} 
 
-body .content section .img-smallview {
+body .content-success section .img-smallview {
     width: 100%;
 }
 
-body .content section .img-smallview img{
+body .content-success section .img-smallview img{
     width: 100%;
 }
 
-body .content section .text{
+body .content-success section .text{
     text-align: center;
     padding: 5%;
 }
 
-body .content section .text p{
+body .content-success section .text p{
     font-weight: 300;
     font-size: 1rem;
     padding: 2%;
 }
 
-body .content section button{
+body .content-success section button{
     font-size: 1rem;
     margin: 5% 0;
     padding: 3%;
@@ -151,7 +156,7 @@ body .content section button{
     cursor: pointer;
 }
 
-body .content section button:hover {
+body .content-success section button:hover {
     animation: shaking 0.4s infinite;}
 @keyframes shaking {
    0% {transform: translateX(0) rotate(0deg);}
@@ -161,17 +166,17 @@ body .content section button:hover {
    100% {transform: translateX(0px) rotate(0deg);}
 }
 
-body .content section button a{
+body .content-success section button a{
     color: var(--white);
     text-decoration: none;
 }
 
-body .content section .final{
+body .content-success section .final{
     
 
 }
 
-body .content section .final p{
+body .content-success section .final p{
     font-weight: 300;
     font-size: 1rem;
     padding: 2%;
@@ -182,6 +187,7 @@ body .content section .final p{
 body footer{
     background-color: var(--blue);
     padding: 2%;
+    width: 100%;
 }
 
 body footer p{
@@ -211,10 +217,8 @@ body footer p{
         align-items: center;
         padding: 0;
     }
-    body .content section form label{
-        font-size: 1rem;
-    }
-    body .content section form button{
+    body .content-success section .title .successh2{
+        font-weight: 600;
         font-size: 1.2rem;
     }
     body footer{
@@ -230,95 +234,21 @@ body footer p{
 @media screen and (min-width: 1024px) {
     
     body{
-        max-width: 1366px;
+        max-width: 1024px;
         margin: auto;
-    }
-
-    body header .notifications a{
-        width: 4%;
-    }
-    
-    body .content{
-        display: flex;
-        flex-direction: row;
-    }
-    body .content section {
+        
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    body .content section .title div{
-        display: flex;
-        flex-direction: column;
-    }
-    body .content section .title div h2{
-        font-weight: 300;
-       /*  font-size: .6rem; */
-        padding: 0 1%;
-    }
-    body .content section text p{
-        padding: 0 0 2% 0;
-    }
-    body .content figure{
-        width: 40%;
-        background-image: url(/assets/ChristmasDecor.jpg);
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
 
-    body .content figure::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(254, 254, 254, 0.71) ;
-    }
-
-    body .content figure img{
-        width: 85%;   
-        position: absolute;
-        right: -4em;
-    }
-    body .content section{
+    body .content-success{
         width: 60%;
-        margin: 3% 5% 3% 7% ;
+        background-color: var(--gray-light);
+        
     }
-    body .content section .img-smallview img{
-        width: 0;
-        height: 0;
+    body .footer{
+        width: 100%;
     }
-    body .content section .text{
-        padding:  5%;
-    }
-    body .content section .text p{
-        padding: 2% 0;
-    }
-    body .content section form{
-        padding: 2% 10%;
-        width: 70%;
-        background-color: transparent;
-        box-shadow: none;
-    }
-    body .content section form label{
-        padding: 3% 0 ;
-    }
-    body .content section form input{
-        font-size: 1rem;
-        padding: 3%;
-        border-radius: 0.8rem;
-        box-shadow: 0 2px 4px var(--gray);
-        font-weight: 500;
-        background: var(--white);
-        border: none;        
-    }
-    body .content section form button{
-        padding: 2%;
-        margin: 8% 0 5%;
-    }
-    
+
 }
